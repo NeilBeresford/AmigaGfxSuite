@@ -1,10 +1,10 @@
 /**----------------------------------------------------------------------------
 
-    @file       NimbleLib.h
-    @defgroup   NimbleLIB Nimble Library Support Modules
-    @brief      Master include file for the Nimble Library
+    @file       AmigaGfxLib.h
+    @defgroup   AmigaGfxLIB AmigaGfx Library Support Modules
+    @brief      Master include file for the AmigaGfx Library
 
-    @copyright  Neil Beresford 2023
+    @copyright  Neil Beresford 2024
 
 -----------------------------------------------------------------------------*/
 
@@ -14,7 +14,10 @@
 // Includes
 //-----------------------------------------------------------------------------
 
+#include "Modules/ErrorHandling/ErrorHandler.h" // EditorHandling class
+#include "Modules/Logging/Logger.h"             // Logger class
+#include "Modules/FileHandling/FileManager.h"   // FileManager class
 
 //-----------------------------------------------------------------------------
-// End of file: NimbleLib.h
+// End of file: AmigaGfxLib.h
 //-----------------------------------------------------------------------------

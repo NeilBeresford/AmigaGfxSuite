@@ -1,10 +1,10 @@
 /**----------------------------------------------------------------------------
 
     @file       main.cpp
-    @defgroup   NimbleCalc NimbleCalc
-    @brief      Main entry and control point for the NimbleCalc
+    @defgroup   AmigaGfxCalc AmigaGfxCalc
+    @brief      Main entry and control point for the AmigaGfxCalc
 
-    @copyright  Neil Beresford 2023
+    @copyright  Neil Beresford 2024
 
 Notes:
 
@@ -25,8 +25,7 @@ Notes:
 // Namespace access
 //-----------------------------------------------------------------------------
 
-using namespace Nimble;
-using namespace Nimble::Screen;
+using namespace AmigaGfx;
 
 //-----------------------------------------------------------------------------
 // Defines
@@ -43,7 +42,6 @@ using namespace Nimble::Screen;
 //-----------------------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------------------
-
 
 //-----------------------------------------------------------------------------
 // External Functionality

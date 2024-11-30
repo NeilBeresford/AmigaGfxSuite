@@ -1,10 +1,10 @@
 /**----------------------------------------------------------------------------
 
     @file       Tools.cpp
-    @defgroup   NimbleLIBTools Nimble Library Tools Module
+    @defgroup   AmigaGfxLIBTools AmigaGfx Library Tools Module
     @brief      Handles error messages for the USB tool.
 
-    @copyright  Neil Bereford 2023
+    @copyright  Neil Bereford 2024
 
 Notes:
 
@@ -21,7 +21,7 @@ Notes:
 // Namespace
 //-----------------------------------------------------------------------------
 
-namespace Nimble
+namespace AmigaGfx
 {
 
 //-----------------------------------------------------------------------------
@@ -31,7 +31,7 @@ namespace Nimble
 // Constructor and destructor  -------------------------------------------------
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBTools Nimble Library Tools Module
+    @ingroup    AmigaGfxLIBTools AmigaGfx Library Tools Module
     @brief      Constructor for the Tools class
 
   --------------------------------------------------------------------------*/
@@ -40,7 +40,7 @@ Tools::Tools()
 }
 //-----------------------------------------------------------------------------
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBTools Nimble Library Tools Module
+    @ingroup    AmigaGfxLIBTools AmigaGfx Library Tools Module
     @brief      Destructor for the Tools class
 
   --------------------------------------------------------------------------*/
@@ -51,7 +51,7 @@ Tools::~Tools()
 //-----------------------------------------------------------------------------
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBTools Nimble Library Tools Module
+    @ingroup    AmigaGfxLIBTools AmigaGfx Library Tools Module
     @brief      Calculates the CRC for the data
     @param      pData - Pointer to the data
     @param      len - Length of the data to calculate the CRC for
@@ -83,7 +83,7 @@ uint16_t Tools::crc16( uint8_t* pData, uint32_t len ) const
 
 //-----------------------------------------------------------------------------
 
-} // namespace Nimble
+} // namespace AmigaGfx
 
 //-----------------------------------------------------------------------------
 // End of file: Tools.cpp

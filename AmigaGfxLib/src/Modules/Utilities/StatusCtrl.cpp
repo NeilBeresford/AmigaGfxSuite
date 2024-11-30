@@ -1,15 +1,15 @@
 /**----------------------------------------------------------------------------
 
     @file       StatusCtrl.cpp
-    @defgroup   NimbleLIBStatus Nimble Library Status Module
+    @defgroup   AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Status Control Module Header File
 
-    @copyright  Neil Bereford 2023
+    @copyright  Neil Bereford 2024
 
 Notes:
 
     StatusCtrl is a class that provides a simple status control for the
-    Nimble Library. It is used to track the status of the Modules.
+    AmigaGfx Library. It is used to track the status of the Modules.
     The followinbg states are tracked:
 
         Initialized - true if the module is initialized
@@ -42,7 +42,7 @@ Notes:
 // Namespace
 //-----------------------------------------------------------------------------
 
-namespace Nimble
+namespace AmigaGfx
 {
 
 //-----------------------------------------------------------------------------
@@ -52,7 +52,7 @@ namespace Nimble
 // Constructors and Destructors -----------------------------------------------
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Status Control Constructor
 
  -----------------------------------------------------------------------------*/
@@ -64,7 +64,7 @@ StatusCtrl::StatusCtrl()
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Status Control Destructor
 
  -----------------------------------------------------------------------------*/
@@ -75,7 +75,7 @@ StatusCtrl::~StatusCtrl()
 // Getters --------------------------------------------------------------------
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Check to see if the module is not initialized
     @return     bool true if not initialized, false otherwise
  -----------------------------------------------------------------------------*/
@@ -85,7 +85,7 @@ bool StatusCtrl::isNotInitialized() const noexcept
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Check if the module is initialized
     @return     true if initialized, false otherwise
  -----------------------------------------------------------------------------*/
@@ -95,7 +95,7 @@ bool StatusCtrl::isInitialized() const noexcept
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Check if the module is reafy
     @return     true if initialized, false otherwise
  -----------------------------------------------------------------------------*/
@@ -105,7 +105,7 @@ bool StatusCtrl::isReady() const noexcept
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Check if the module is busy
     @return     true if initialized, false otherwise
  -----------------------------------------------------------------------------*/
@@ -115,7 +115,7 @@ bool StatusCtrl::isBusy() const noexcept
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Check if the module is errored
     @return     true if initialized, false otherwise
  -----------------------------------------------------------------------------*/
@@ -127,7 +127,7 @@ bool StatusCtrl::isError() const noexcept
 // Setters --------------------------------------------------------------------
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Sets the erorr flag
     @return     void
  -----------------------------------------------------------------------------*/
@@ -137,7 +137,7 @@ void StatusCtrl::setError()
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Clear the error flag
     @return     void
  -----------------------------------------------------------------------------*/
@@ -147,7 +147,7 @@ void StatusCtrl::clearError()
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Sets the busy flag
     @return     void
  -----------------------------------------------------------------------------*/
@@ -157,7 +157,7 @@ void StatusCtrl::setBusy()
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Clear the busy flag
     @return     true if initialized, false otherwise
  -----------------------------------------------------------------------------*/
@@ -167,7 +167,7 @@ void StatusCtrl::clearBusy()
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Sets the ready flag
     @return     void
  -----------------------------------------------------------------------------*/
@@ -177,7 +177,7 @@ void StatusCtrl::setReady()
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Clear the ready flag
     @return     void
  -----------------------------------------------------------------------------*/
@@ -187,7 +187,7 @@ void StatusCtrl::clearReady()
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Sets the initialized flag
     @return     void
  -----------------------------------------------------------------------------*/
@@ -198,7 +198,7 @@ void StatusCtrl::setInitialized()
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Clear the inialized flag
     @return     void
  -----------------------------------------------------------------------------*/
@@ -209,7 +209,7 @@ void StatusCtrl::clearInitialized()
 // user status ----------------------------------------------------------------
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Sets the user status flag, up to 8 flags can be set
     @param      userFlag - user status to clear
     @return     void
@@ -226,7 +226,7 @@ void StatusCtrl::setUserFlag( uint32_t userFlag )
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Clears the user status flag, up to 8 flags can be cleared
     @param      userFlag - user status to clear
     @return     void
@@ -242,7 +242,7 @@ void StatusCtrl::clearUserFlag( uint32_t userFlag )
 }
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBStatus Nimble Library Status Module
+    @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Check if the user status flag is set
     @param      userFlag - user status to check
     @return     true if set, false otherwise
@@ -259,7 +259,7 @@ bool StatusCtrl::isUserFlagSet( uint32_t userFlag ) const noexcept
 
 //-----------------------------------------------------------------------------
 
-} // namespace Nimble
+} // namespace AmigaGfx
 
 //-----------------------------------------------------------------------------
 // End of file: StatusCtrl.h

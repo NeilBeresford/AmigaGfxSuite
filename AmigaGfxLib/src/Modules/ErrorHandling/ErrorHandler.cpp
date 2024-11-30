@@ -1,10 +1,10 @@
 /**----------------------------------------------------------------------------
 
     @file       ErrorHandler.cpp
-    @defgroup   NimbleLIBError Nimble Library Error Module
+    @defgroup   AmigaGfxLIBError AmigaGfx Library Error Module
     @brief      Handles error messages for the USB tool.
 
-    @copyright  Neil Bereford 2023
+    @copyright  Neil Bereford 2024
 
 Notes:
 
@@ -49,7 +49,7 @@ Notes:
 // Namespace
 //-----------------------------------------------------------------------------
 
-namespace Nimble
+namespace AmigaGfx
 {
 
 //-----------------------------------------------------------------------------
@@ -57,7 +57,7 @@ namespace Nimble
 // ----------------------------------------------------------------------------
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBError Nimble Library Error Module
+    @ingroup    AmigaGfxLIBError AmigaGfx Library Error Module
     @brief      Constructor for the ErrorHandler class
 
   --------------------------------------------------------------------------*/
@@ -70,7 +70,7 @@ ErrorHandler::ErrorHandler()
 }
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBError Nimble Library Error Module
+    @ingroup    AmigaGfxLIBError AmigaGfx Library Error Module
     @brief      Destructor for the ErrorHandler class
 
   --------------------------------------------------------------------------*/
@@ -80,7 +80,7 @@ ErrorHandler::~ErrorHandler()
 }
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBError Nimble Library Error Module
+    @ingroup    AmigaGfxLIBError AmigaGfx Library Error Module
     @brief      Handles the error message, storing and reporting
     @param      errorType - Type of error
     @param      errorNumber - Error number
@@ -102,7 +102,7 @@ void ErrorHandler::handleError( ErrorType errorType, LibraryError errorNumber, c
 }
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBError Nimble Library Error Module
+    @ingroup    AmigaGfxLIBError AmigaGfx Library Error Module
     @brief      Clears the error list
     @return     void
   --------------------------------------------------------------------------*/
@@ -112,7 +112,7 @@ void ErrorHandler::clearErrors()
 }
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBError Nimble Library Error Module
+    @ingroup    AmigaGfxLIBError AmigaGfx Library Error Module
     @brief      Support function that reports the errors to the console terminal
     @return     void
  --------------------------------------------------------------------------*/
@@ -176,7 +176,7 @@ ErrorStatus ErrorHandler::getStatusInformation()
 }
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBError Nimble Library Error Module
+    @ingroup    AmigaGfxLIBError AmigaGfx Library Error Module
     @brief      Displays the passed in error to the console terminal
     @param      error - Error structure
     @return     void
@@ -218,7 +218,7 @@ void ErrorHandler::displayMessage( const ErrorInformation& error )
 //-----------------------------------------------------------------------------
 
 /**----------------------------------------------------------------------------
-    @ingroup    NimbleLIBError Nimble Library Error Module
+    @ingroup    AmigaGfxLIBError AmigaGfx Library Error Module
     @brief      Clears all the members of ErrorStatus
     @return     void
   --------------------------------------------------------------------------*/
@@ -233,7 +233,7 @@ void ErrorStatus::Clear()
 
 //-----------------------------------------------------------------------------
 
-} // namespace Nimble
+} // namespace AmigaGfx
 
 //-----------------------------------------------------------------------------
 // End of file: ErrorHandler.cpp

@@ -1,9 +1,9 @@
 /**----------------------------------------------------------------------------
 
     @file       FileManager.h
-    @defgroup   NimbleLIBFile Nimble Library File Module
+    @defgroup   AmigaGfxLIBFile AmigaGfx Library File Module
     @brief      File Manager Module
-    @copyright  Neil Bereford 2023
+    @copyright  Neil Bereford 2024
 
 -----------------------------------------------------------------------------*/
 //-----------------------------------------------------------------------------
@@ -21,7 +21,7 @@
 // Namesapce
 //-----------------------------------------------------------------------------
 
-namespace Nimble
+namespace AmigaGfx
 {
 
 //-----------------------------------------------------------------------------
@@ -29,7 +29,7 @@ namespace Nimble
 //-----------------------------------------------------------------------------
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBFile Nimble Library File Module
+    @ingroup    AmigaGfxLIBFile AmigaGfx Library File Module
     @brief      File state machine states
   --------------------------------------------------------------------------*/
 typedef enum
@@ -37,13 +37,13 @@ typedef enum
     IDLE = 0,    //!< 0 - structure is idle and free for use
     OPENED,      //!< 1 - File has been opened
     READ,        //!< 2 - File has been read
-    ERROR,       //!< 3 - Errored state
+    ERRORED,     //!< 3 - Errored state
     TOTAL_STATES //!< 4 - Total States
 
 } TE_FILE_STATE;
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBFile Nimble Library File Module
+    @ingroup    AmigaGfxLIBFile AmigaGfx Library File Module
     @brief      FILE_DATA structure stores the file data
                 and the file state machine
 
@@ -60,7 +60,7 @@ typedef struct
 } TS_FILE_DATA, *PTS_FILE_DATA;
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBFile Nimble Library File Module
+    @ingroup    AmigaGfxLIBFile AmigaGfx Library File Module
     @brief      File Manager Class manages the files with their data
   --------------------------------------------------------------------------*/
 class FileManager
@@ -82,7 +82,7 @@ class FileManager
 
 //-----------------------------------------------------------------------------
 
-} // namespace Nimble
+} // namespace AmigaGfx
 
 //-----------------------------------------------------------------------------
 // End of file: FileManager.h

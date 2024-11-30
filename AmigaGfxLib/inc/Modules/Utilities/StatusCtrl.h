@@ -1,10 +1,10 @@
 /**----------------------------------------------------------------------------
 
     @file       StatusCtrl.h
-    @defgroup   NimbleLIBStatus Nimble Library Status Module
+    @defgroup   AmigaGfxLIBStatus AmigaGfx Library Status Module
     @brief      Status Control Module Header File
 
-    @copyright  Neil Bereford 2023
+    @copyright  Neil Bereford 2024
 
 -----------------------------------------------------------------------------*/
 
@@ -20,7 +20,7 @@
 // Namespace
 // ----------------------------------------------------------------------------
 
-namespace Nimble
+namespace AmigaGfx
 {
 
 //-----------------------------------------------------------------------------
@@ -59,7 +59,7 @@ class StatusCtrl
   private:
     // Typedefs and Enumerations -----------------------------------------------
     /**----------------------------------------------------------------------------
-        @ingroup    NimbleLIBStatus Nimble Library Status Module
+        @ingroup    AmigaGfxLIBStatus AmigaGfx Library Status Module
         @brief      Status Control Union
     -----------------------------------------------------------------------------*/
     typedef union
@@ -96,7 +96,7 @@ class StatusCtrl
 
 //-----------------------------------------------------------------------------
 
-} // namespace Nimble
+} // namespace AmigaGfx
 
 //-----------------------------------------------------------------------------
 // End of file: StatusCtrl.h

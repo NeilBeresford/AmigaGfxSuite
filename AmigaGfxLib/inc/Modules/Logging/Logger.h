@@ -1,9 +1,9 @@
 /**----------------------------------------------------------------------------
 
     @file       Logger.h
-    @defgroup   NimbleLIBLogger Nimble Library Logger Module
+    @defgroup   AmigaGfxLIBLogger AmigaGfx Library Logger Module
     @brief      Logging Manager Module
-    @copyright  Neil Bereford 2023
+    @copyright  Neil Bereford 2024
 
 -----------------------------------------------------------------------------*/
 
@@ -24,7 +24,7 @@
 // Namesapce
 //-----------------------------------------------------------------------------
 
-namespace Nimble
+namespace AmigaGfx
 {
 
 //-----------------------------------------------------------------------------
@@ -32,7 +32,7 @@ namespace Nimble
 //-----------------------------------------------------------------------------
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBLogger Nimble Library Logger Module
+    @ingroup    AmigaGfxLIBLogger AmigaGfx Library Logger Module
     @brief      Logging Manager Class manages the logging of errors
                 and messages
 
@@ -66,7 +66,7 @@ class Logger
 
 //---------------------------------------------------------------------------
 
-} // namespace Nimble
+} // namespace AmigaGfx
 
 //-----------------------------------------------------------------------------
 // End of file: Logger.h

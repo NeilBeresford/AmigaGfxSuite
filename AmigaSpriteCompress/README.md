@@ -1,4 +1,4 @@
-# Nimble Calc
+# AmigaGfx Calc
 
 ## TODO
 

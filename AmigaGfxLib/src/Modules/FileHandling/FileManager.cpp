@@ -1,9 +1,9 @@
 /**----------------------------------------------------------------------------
 
     @file       FileManager.cpp
-    @defgroup   NimbleLIBFile Nimble Library File Module
+    @defgroup   AmigaGfxLIBFile AmigaGfx Library File Module
     @brief      File Manager Module
-    @copyright  Neil Bereford 2023
+    @copyright  Neil Bereford 2024
 
 Notes:
 
@@ -18,7 +18,7 @@ Notes:
 // Namesapce
 //-----------------------------------------------------------------------------
 
-namespace Nimble
+namespace AmigaGfx
 {
 
 //-----------------------------------------------------------------------------
@@ -28,7 +28,7 @@ namespace Nimble
 // Constructors and Destructors -----------------------------------------------
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBFile Nimble Library File Module
+    @ingroup    AmigaGfxLIBFile AmigaGfx Library File Module
     @brief      Constructor for the FileManager class
 
   --------------------------------------------------------------------------*/
@@ -40,7 +40,7 @@ FileManager::FileManager()
 }
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBFile Nimble Library File Module
+    @ingroup    AmigaGfxLIBFile AmigaGfx Library File Module
     @brief      Destructor for the FileManager class
 
   --------------------------------------------------------------------------*/
@@ -50,7 +50,7 @@ FileManager::~FileManager()
 
 //-----------------------------------------------------------------------------
 
-} // namespace Nimble
+} // namespace AmigaGfx
 
 //-----------------------------------------------------------------------------
 // End of file: FileManager.cpp

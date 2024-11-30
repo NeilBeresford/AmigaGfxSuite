@@ -1,1 +1,1 @@
-# Test - NimbleIDE
+# Test - AmigaGfxIDE

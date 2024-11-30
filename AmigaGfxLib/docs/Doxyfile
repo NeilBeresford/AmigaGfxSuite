@@ -42,7 +42,7 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "Nimble Library - Part of NimbleIDE Suite"
+PROJECT_NAME           = "  Amiga Gfx Library - Part of Amiga Gfx Suite"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
@@ -68,7 +68,7 @@ PROJECT_LOGO           = @CMAKE_CURRENT_SOURCE_DIR@/docs/fatherjack.png
 # entered, it will be relative to the location where doxygen was started. If
 # left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = @CMAKE_CURRENT_BINARY_DIR@/DocsNimbleLIB/
+OUTPUT_DIRECTORY       = @CMAKE_CURRENT_BINARY_DIR@/DocsAmigaGfxLib/
 
 # If the CREATE_SUBDIRS tag is set to YES then doxygen will create up to 4096
 # sub-directories (in 2 levels) under the output directory of each output format
@@ -576,7 +576,7 @@ EXTRACT_ANON_NSPACES   = YES
 
 RESOLVE_UNNAMED_PARAMS = YES
 
-D:\NewProjects\Utilities\NimbleIDE\Trunk\NimbleLIB\docs\Doxyfile# If the HIDE_UNDOC_MEMBERS tag is set to YES, doxygen will hide all
+D:\NewProjects\Utilities\AmigaGfxIDE\Trunk\AmigaGfxLIB\docs\Doxyfile# If the HIDE_UNDOC_MEMBERS tag is set to YES, doxygen will hide all
 # undocumented members inside documented classes or files. If set to NO these
 # members will be included in the various overviews, but no documentation
 # section is generated. This option has no effect if EXTRACT_ALL is enabled.

@@ -1,10 +1,10 @@
 /**----------------------------------------------------------------------------
 
     @file       unitTests.cpp
-    @defgroup   NimbleLIB Nimble LIB
-    @brief      Unit Tests for the Nimble LIB
+    @defgroup   AmigaGfxLIB AmigaGfx LIB
+    @brief      Unit Tests for the AmigaGfx LIB
 
-    @copyright  Neil Beresford 2023
+    @copyright  Neil Beresford 2024
 
 Notes:
 
@@ -23,8 +23,7 @@ Notes:
 // Namespace access
 //-----------------------------------------------------------------------------
 
-using namespace Nimble;
-using namespace Nimble::Screen;
+using namespace AmigaGfx;
 
 //-----------------------------------------------------------------------------
 // Unit Tests

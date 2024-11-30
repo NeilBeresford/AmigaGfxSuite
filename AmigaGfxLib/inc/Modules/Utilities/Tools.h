@@ -1,10 +1,10 @@
 /**----------------------------------------------------------------------------
 
     @file       Tools.h
-    @defgroup   NimbleLIBTools Nimble Library Tools Module
+    @defgroup   AmigaGfxLIBTools AmigaGfx Library Tools Module
     @brief      Handles error messages for the USB tool.
 
-    @copyright  Neil Bereford 2023
+    @copyright  Neil Bereford 2024
 
 -----------------------------------------------------------------------------*/
 
@@ -26,7 +26,7 @@
 // Namespace
 // ----------------------------------------------------------------------------
 
-namespace Nimble
+namespace AmigaGfx
 {
 
 //-----------------------------------------------------------------------------
@@ -34,8 +34,8 @@ namespace Nimble
 // ----------------------------------------------------------------------------
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBTools Nimble Library Tools Module
-    @brief      Tools class (Support functionality) for the Nimble Library
+    @ingroup    AmigaGfxLIBTools AmigaGfx Library Tools Module
+    @brief      Tools class (Support functionality) for the AmigaGfx Library
   --------------------------------------------------------------------------*/
 class Tools
 {
@@ -69,7 +69,7 @@ class Tools
 
 //-----------------------------------------------------------------------------
 
-} // end namespace Nimble
+} // end namespace AmigaGfx
 
 //-----------------------------------------------------------------------------
 // End of file: Tools.h

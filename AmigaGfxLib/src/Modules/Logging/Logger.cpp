@@ -1,9 +1,9 @@
 /**----------------------------------------------------------------------------
 
     @file       Logger.cpp
-    @defgroup   NimbleLIBLogger Nimble Library Logger Module
+    @defgroup   AmigaGfxLIBLogger AmigaGfx Library Logger Module
     @brief      Logging messages Module
-    @copyright  Neil Bereford 2023
+    @copyright  Neil Bereford 2024
 
 Notes:
 
@@ -33,7 +33,7 @@ Notes:
 // Namesapce
 //-----------------------------------------------------------------------------
 
-namespace Nimble
+namespace AmigaGfx
 {
 
 //-----------------------------------------------------------------------------
@@ -43,7 +43,7 @@ namespace Nimble
 // Constructors and Destructors -----------------------------------------------
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBLogger Nimble Library Logger Module
+    @ingroup    AmigaGfxLIBLogger AmigaGfx Library Logger Module
     @brief      Constructor for the Logger class
 
   --------------------------------------------------------------------------*/
@@ -55,7 +55,7 @@ Logger::Logger()
 }
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBLogger Nimble Library Logger Module
+    @ingroup    AmigaGfxLIBLogger AmigaGfx Library Logger Module
     @brief      Destructor for the Logger class
 
   --------------------------------------------------------------------------*/
@@ -74,7 +74,7 @@ void Logger::loggerInitialize()
 }
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBLogger Nimble Library Logger Module
+    @ingroup    AmigaGfxLIBLogger AmigaGfx Library Logger Module
     @brief      Log a message to the log file
     @param      message     Message to log
     @return     LibraryError - Error code
@@ -106,7 +106,7 @@ LibraryError Logger::LogMessage( const std::string& message )
 }
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBLogger Nimble Library Logger Module
+    @ingroup    AmigaGfxLIBLogger AmigaGfx Library Logger Module
     @brief      Log a message to the log file
     @param      error	   Error code
     @param      message     Message to log
@@ -141,7 +141,7 @@ LibraryError Logger::LogError( LibraryError error, const std::string& message )
 
 //-----------------------------------------------------------------------------
 
-} // namespace Nimble
+} // namespace AmigaGfx
 
 //-----------------------------------------------------------------------------
 // End of file: Logger.cpp

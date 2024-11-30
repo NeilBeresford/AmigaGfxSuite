@@ -1,10 +1,10 @@
 /**----------------------------------------------------------------------------
 
     @file       ErrorHandler.h
-    @defgroup   NimbleLIBError Nimble Library Error Module
+    @defgroup   AmigaGfxLIBError AmigaGfx Library Error Module
     @brief      Handles error messages for the USB tool.
 
-    @copyright  Neil Bereford 2023
+    @copyright  Neil Bereford 2024
 
 -----------------------------------------------------------------------------*/
 
@@ -26,7 +26,7 @@
 // Namespace
 // ----------------------------------------------------------------------------
 
-namespace Nimble
+namespace AmigaGfx
 {
 
 //-----------------------------------------------------------------------------
@@ -34,8 +34,8 @@ namespace Nimble
 // ----------------------------------------------------------------------------
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBError Nimble Library Error Module
-    @brief      Error types for the Nimble Library
+    @ingroup    AmigaGfxLIBError AmigaGfx Library Error Module
+    @brief      Error types for the AmigaGfx Library
   --------------------------------------------------------------------------*/
 enum class ErrorType
 {
@@ -46,7 +46,7 @@ enum class ErrorType
 };
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBError Nimble Library Error Module
+    @ingroup    AmigaGfxLIBError AmigaGfx Library Error Module
     @brief      Stored errors, used for Reporting
   --------------------------------------------------------------------------*/
 struct ErrorInformation
@@ -58,7 +58,7 @@ struct ErrorInformation
 };
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBError Nimble Library Error Module
+    @ingroup    AmigaGfxLIBError AmigaGfx Library Error Module
     @brief      Status of the error handler
   --------------------------------------------------------------------------*/
 struct ErrorStatus
@@ -74,8 +74,8 @@ struct ErrorStatus
 };
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBError Nimble Library Error Module
-    @brief      Error handler class for the Nimble Library
+    @ingroup    AmigaGfxLIBError AmigaGfx Library Error Module
+    @brief      Error handler class for the AmigaGfx Library
   --------------------------------------------------------------------------*/
 class ErrorHandler : public Logger
 {
@@ -111,7 +111,7 @@ class ErrorHandler : public Logger
 
 //-----------------------------------------------------------------------------
 
-} // end namespace Nimble
+} // end namespace AmigaGfx
 
 //-----------------------------------------------------------------------------
 // End of file: ErrorHandler.h

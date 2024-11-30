@@ -1,10 +1,10 @@
 /**----------------------------------------------------------------------------
 
     @file       Errors.h
-    @defgroup   NimbleLIBError Nimble Library Error Module
+    @defgroup   AmigaGfxLIBError AmigaGfx Library Error Module
     @brief      Error numbers - please add erorrs here.
 
-    @copyrighr  Neil Bereford 2023
+    @copyrighr  Neil Bereford 2024
 
 
 Notes:
@@ -34,7 +34,7 @@ Version:
 // Namespace
 // ----------------------------------------------------------------------------
 
-namespace Nimble
+namespace AmigaGfx
 {
 
 //-----------------------------------------------------------------------------
@@ -50,8 +50,8 @@ namespace Nimble
 // ----------------------------------------------------------------------------
 
 /**---------------------------------------------------------------------------
-    @ingroup    NimbleLIBError Nimble Library Error Module
-    @brief      Error numbers for the Nimble Library
+    @ingroup    AmigaGfxLIBError AmigaGfx Library Error Module
+    @brief      Error numbers for the AmigaGfx Library
   --------------------------------------------------------------------------*/
 enum class LibraryError
 {
@@ -108,7 +108,7 @@ enum class LibraryError
 
 //-----------------------------------------------------------------------------
 
-} // end namespace Nimble
+} // end namespace AmigaGfx
 
 //-----------------------------------------------------------------------------
 // End of file: Errors.h
