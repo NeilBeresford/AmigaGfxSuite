@@ -33,7 +33,7 @@
 # iconv built into libc) for the transcoding. See
 # https://www.gnu.org/software/libiconv/ for the list of possible encodings.
 # The default value is: UTF-8.
-
+HTML_CODE_FOLDING = false 
 DOXYFILE_ENCODING      = UTF-8
 
 # The PROJECT_NAME tag is a single word (or a sequence of words surrounded by
@@ -576,7 +576,7 @@ EXTRACT_ANON_NSPACES   = YES
 
 RESOLVE_UNNAMED_PARAMS = YES
 
-D:\NewProjects\Utilities\AmigaGfxIDE\Trunk\AmigaGfxLIB\docs\Doxyfile# If the HIDE_UNDOC_MEMBERS tag is set to YES, doxygen will hide all
+# If the HIDE_UNDOC_MEMBERS tag is set to YES, doxygen will hide all
 # undocumented members inside documented classes or files. If set to NO these
 # members will be included in the various overviews, but no documentation
 # section is generated. This option has no effect if EXTRACT_ALL is enabled.

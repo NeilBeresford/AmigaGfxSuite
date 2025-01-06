@@ -17,14 +17,17 @@ if(MSVC)
     target_link_options(AmigaSpriteCompress PRIVATE "/NODEFAULTLIB:LIBCMT")
 endif()
 
+find_package(PNG REQUIRED)
+include_directories(${PNG_INCLUDE_DIR})
+
 # link libraries
 if (LINUX)
-    target_link_libraries(AmigaSpriteCompress PRIVATE AmigaGfxLib )
+    target_link_libraries(AmigaSpriteCompress PRIVATE AmigaGfxLib ${PNG_LIBRARY} )
 else()
-    target_link_libraries(AmigaSpriteCompress PRIVATE AmigaGfxLib )
+    target_link_libraries(AmigaSpriteCompress PRIVATE AmigaGfxLib ${PNG_LIBRARY} )
 endif()
 # include path for libraries
-target_include_directories(AmigaSpriteCompress PUBLIC AmigaGfxLib )
+target_include_directories(AmigaSpriteCompress PUBLIC AmigaGfxLib ${PNG_INCLUDE_DIR} )
 
 
 # check if Doxygen is installed
@@ -48,3 +51,6 @@ else (DOXYGEN_FOUND)
     message("Doxygen need to be installed to generate the doxygen documentation")
 endif (DOXYGEN_FOUND)
 
+# make sure the DLLs is copied to the debug (output folder)
+file( COPY "../Libraries/libpng16d.dll" DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/Debug )
+file( COPY "../Libraries/zlibd.dll" DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/Debug )
