@@ -11,6 +11,15 @@ option(BUILD_DOC "Build documentation" ON)
 # tells cmake that it will be creating a library 
 add_library(AmigaGfxLib ${SOURCE_FILES})
 
+find_package(PNG REQUIRED)
+find_package(ZLIB REQUIRED)
+
+include_directories(${PNG_INCLUDE_DIR})
+include_directories(${ZLIB_INCLUDE_DIR})
+target_link_libraries(AmigaGfxLib ${PNG_LIBRARY} ${ZLIB_LIBRARY} )
+
+
+
 add_compile_definitions(AGLIBRARY _CRT_SECURE_NO_WARNINGS)
 
 # Add /NODEFAULTLIB:Library flag

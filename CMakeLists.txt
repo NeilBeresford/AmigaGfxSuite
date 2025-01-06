@@ -6,7 +6,7 @@ project(AmigaGfxSuite VERSION 0.0.1)
 
 # set C Make to use the C++20 Language version
 set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_C_STANDARD 20)
+set(CMAKE_C_STANDARD 17)
 
 include(ExternalProject)
 
@@ -28,9 +28,16 @@ ExternalProject_Add(
 # add the subdirectories for the library and the converters etc
 #-----------------------------------------------------------------------------
 
+# supporting libraries
+add_subdirectory(zlib)
+add_subdirectory(libpng)
+
+# libraries and applications
 add_subdirectory(AmigaGfxLib)
-add_subdirectory(TestAmigaGfxLIB)
 add_subdirectory(AmigaSpriteCompress)
+add_subdirectory(AmigaPaletteMerge)
+
+# unit testing
+add_subdirectory(TestAmigaGfxLIB)
 add_subdirectory(TestAmigaSpriteCompress)
-
-
+add_subdirectory(TestAmigaPaletteMerge)

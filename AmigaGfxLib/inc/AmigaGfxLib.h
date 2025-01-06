@@ -17,6 +17,7 @@
 #include "Modules/ErrorHandling/ErrorHandler.h" // EditorHandling class
 #include "Modules/Logging/Logger.h"             // Logger class
 #include "Modules/FileHandling/FileManager.h"   // FileManager class
+#include "Modules/Utilities/Tools.h"            // Tool class
 
 //-----------------------------------------------------------------------------
 // End of file: AmigaGfxLib.h

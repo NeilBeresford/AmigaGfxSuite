@@ -16,6 +16,7 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <filesystem>
 
 //-----------------------------------------------------------------------------
 // Namesapce
@@ -71,11 +72,15 @@ class FileManager
     FileManager();
     ~FileManager();
     // File Handling --------------------------------------------------------
-    uint32_t openFile( const std::string& fileName );
+    bool        OpenFile( const std::string& fileName, std::vector<uint8_t>& fileData );
+    bool        SaveFile( const std::string& fileName, std::vector<uint8_t>& fileData );
+    uint32_t    listAllFiles( const std::string& pathName );
+    std::string processFileList( uint32_t fileIndex );
 
   private:
     // Private Data -------------------------------------------------------
     std::vector<TS_FILE_DATA> fileList;   //!< List of files
+    std::vector<std::string>  fileNames;  //!< File Data
     uint32_t                  nextFileID; //!< Unique File ID used for next file
     uint32_t                  fileCount;  //!< Total number of files handled
 };
