@@ -148,13 +148,16 @@ void Tools::Read_PNG( const char* file_name, uint32_t sprWidth, uint32_t sprHeig
 
     // create file name and save data to disk
     std::string rawName2( file_name );
-
+    if ( rawName2.find_last_of( ".png" ) != std::string::npos )
+        rawName2 = rawName2.substr( 0, rawName2.find_last_of( ".png" ) - 3 );
     std::string rawName( file_name );
+    if ( rawName.find_last_of( ".png" ) != std::string::npos )
+        rawName = rawName.substr( 0, rawName.find_last_of( ".png" ) - 3 );
     rawName += std::format( "-{0}-{1}.RAW", picWidth, picHeight );
 
     // Crude check for the sprite height
     uint32_t sprH = picHeight;
-    if ( picWidth == 60 && picHeight > picWidth * 2 )
+    if ( ( picWidth > 10 ) && ( picHeight > picWidth * 4 ) )
         sprH = picWidth;
 
     Save_Vector_To_File( rawData, rawName );
@@ -164,9 +167,8 @@ void Tools::Read_PNG( const char* file_name, uint32_t sprWidth, uint32_t sprHeig
     // -------------------------------------------------------------------------
     // Compress and save the sprite data
 
-    // if ( picHeight > ( picWidth * 4 ) )
-
-    CompressSpriteData( rawData, picWidth, picHeight, picWidth, sprH, rawName2 );
+    if ( picHeight > ( picWidth * 4 ) )
+        CompressSpriteData( rawData, picWidth, picHeight, picWidth, sprH, rawName2 );
 
     //-------------------------------------------------------------------------
     // tidy up before exiting
@@ -233,6 +235,8 @@ void Tools::CompressSpriteData( std::vector<uint8_t>& data, uint32_t w, uint32_t
     // calculate the offsets
     for ( uint32_t sprDy = 0; sprDy < h; sprDy += sprH )
     {
+        if ( sprDy + sprH > h )
+            break;
         for ( uint32_t sprDx = 0; sprDx < w; sprDx += sprW )
         {
 
@@ -310,7 +314,7 @@ void Tools::CompressSpriteData( std::vector<uint8_t>& data, uint32_t w, uint32_t
     }
 
     // save the compressed sprite data to disk...
-    fileName += ".SPR";
+    fileName += std::format( "-{0}-{1}-{2}.SPR", sprCount, sprW, sprH );
     std::ofstream file( fileName, std::ios::binary );
 
     if ( !file.is_open() )
